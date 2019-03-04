@@ -19,14 +19,6 @@ def randomname(n, m):
     elif m == 3:
         # 数字とアンダーバーとアスキー文字
         return ''.join(random.choices(string.ascii_letters + string.digits + "_", k=n))
-    elif m == 4:
-        return ''.join(random.choices(string.digits, k=n))  # 数字(任意ID部分一致)
-    elif m == 5:
-        # 数字とアンダーバー(任意ID部分一致)
-        return ''.join(random.choices(string.digits + "_", k=n))
-    elif m == 6:
-        # 数字とアンダーバーとアスキー文字(任意ID部分一致)
-        return ''.join(random.choices(string.ascii_letters + string.digits + "_", k=n))
 
 
 def twitter_acc(url):
